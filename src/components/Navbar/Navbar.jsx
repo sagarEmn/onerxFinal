@@ -55,9 +55,9 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-links">
+            <Link to="/inHouseProd" className="nav-links">
               IN-HOUSE PRODUCTION
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a href="#" className="nav-links">
