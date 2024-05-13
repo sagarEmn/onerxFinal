@@ -31,37 +31,37 @@ const Gallery2 = () => {
                 services we offer in-house, performed by a team of experts
                 passionate about shaping the future of retail.
               </p>
-              <div className={styles["three-menu-container"]}>
-                <div className={styles.menu}>
+              <div className={globalStyles["three-menu-container"]}>
+                <div className={globalStyles["menu-container"]}>
                   <div
-                    className={`${styles["menu-item"]} ${
-                      styles["description-one-small"]
-                    } ${activeIndex === 0 ? styles.active : ""}`}
+                    className={`${globalStyles["menu-item"]} ${
+                      globalStyles["description-one-small"]
+                    } ${activeIndex === 0 ? globalStyles.active : ""}`}
                     onClick={() => handleClick(0)}
                   >
                     INNOVATION
                   </div>
                   <div
-                    className={`${styles["menu-item"]} ${
-                      styles["description-one-small"]
-                    } ${activeIndex === 1 ? styles.active : ""}`}
+                    className={`${globalStyles["menu-item"]} ${
+                      globalStyles["description-one-small"]
+                    } ${activeIndex === 1 ? globalStyles.active : ""}`}
                     onClick={() => handleClick(1)}
                   >
                     PRODUCTION
                   </div>
                   <div
-                    className={`${styles["menu-item"]} ${
-                      styles["description-one-small"]
-                    } ${activeIndex === 2 ? styles.active : ""}`}
+                    className={`${globalStyles["menu-item"]} ${
+                      globalStyles["description-one-small"]
+                    } ${activeIndex === 2 ? globalStyles.active : ""}`}
                     onClick={() => handleClick(2)}
                   >
                     QUALITY
                   </div>
                 </div>
-                <div className={styles["description-one"]}>
+                <div className={globalStyles["description-one"]}>
                   <div
-                    className={`${styles.description} ${
-                      activeIndex === 0 ? styles.active : ""
+                    className={`${globalStyles.description} ${
+                      activeIndex === 0 ? globalStyles.active : ""
                     }`}
                   >
                     Innovation is one of our core in-house capabilities. We help
@@ -69,8 +69,8 @@ const Gallery2 = () => {
                     client's products and services to life, to real users.
                   </div>
                   <div
-                    className={`${styles.description} ${
-                      activeIndex === 1 ? styles.active : ""
+                    className={`${globalStyles.description} ${
+                      activeIndex === 1 ? globalStyles.active : ""
                     }`}
                   >
                     We provide the best of both the design and production with
@@ -78,8 +78,8 @@ const Gallery2 = () => {
                     complex.
                   </div>
                   <div
-                    className={`${styles.description} ${
-                      activeIndex === 2 ? styles.active : ""
+                    className={`${globalStyles.description} ${
+                      activeIndex === 2 ? globalStyles.active : ""
                     }`}
                   >
                     We bring all members of a project team together early in the
@@ -93,7 +93,7 @@ const Gallery2 = () => {
 
             {/* image */}
             <div
-              className={styles["gallery-image"]}
+              className={globalStyles["image"]}
               data-aos="fade-up"
               data-aos-delay="150"
             >
