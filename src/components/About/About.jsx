@@ -1,5 +1,5 @@
 import React from "react";
-import Gallery1 from "./Gallery1/Gallery1";
+import Gallery1 from "./Gallery1/About";
 
 export default function About() {
     return(

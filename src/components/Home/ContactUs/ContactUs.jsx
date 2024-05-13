@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../../global.module.css";
-import contactImageSources from "../../ContactImageSources";
+import {contactImageSources} from "../../globalImageSources";
 
 export default function ContactUs() {
   // Array of image sources

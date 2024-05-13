@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import globalStyles from "../../../global.module.css";
-import local from "./Gallery1.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import aboutImageSources from "../AboutImage.js";
-import VideoSection from "../VideoSection/VideoSection.jsx";
-import contactImageSources from "../../ContactImageSources.jsx";
+import VideoSection from "../../VideoSection/VideoSection.jsx";
+import {contactImageSources, videoLink} from "../../globalImageSources.jsx";
 
 const Gallery1 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -15,10 +14,10 @@ const Gallery1 = () => {
   return (
     <>
       <div
-        className={`${globalStyles["outer-container"]} ${local["outer-container"]}`}
+        className={`${globalStyles["outer-container"]}`}
       >
         <div
-          className={`${globalStyles["padding-container"]} ${local["padding-container"]}`}
+          className={`${globalStyles["padding-container"]}`}
         >
           {/* image container */}
           <div
@@ -56,7 +55,7 @@ const Gallery1 = () => {
 
           {/* video container */}
           <div className={globalStyles["padding-group-extend"]}>
-            <VideoSection videoLink={aboutImageSources[1].image} />
+            <VideoSection videoLink={videoLink[1].image} />
           </div>
 
           {/* title-description-image-container */}
@@ -129,7 +128,7 @@ const Gallery1 = () => {
           <div
             className={`${globalStyles["padding-group-extend"]} ${globalStyles["video-80"]}`}
           >
-            <VideoSection videoLink={aboutImageSources[14].image} />
+            <VideoSection videoLink={videoLink[0].image} />
           </div>
 
           {/* title-description-image-container */}

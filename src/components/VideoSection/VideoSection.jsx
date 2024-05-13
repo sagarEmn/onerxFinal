@@ -1,5 +1,5 @@
 import React from "react";
-import globalStyles from "../../../global.module.css";
+import globalStyles from "../../global.module.css";
 
 export default function VideoSection({ videoLink }) {
   return (
