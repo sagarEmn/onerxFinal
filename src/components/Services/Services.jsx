@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import globalStyles from "../../global.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ContactUs from "../Home/ContactUs/ContactUs";
 import VideoSection from "../VideoSection/VideoSection";
 import { contactImageSources, videoLink } from "../globalImageSources";
 import servicesImageSources from "./ServicesImageSources";
+import aboutImageSources from "../About/AboutImage";
 
 const Services = () => {
   return (
@@ -817,8 +819,60 @@ const Services = () => {
               </div>
             </div>
           </div>
+
+          {/* title-description-image-container */}
+          {/*  gear icon getting to know you */}
+          <div className={globalStyles["padding-group-middle"]}>
+            <div
+              className={
+                globalStyles["title-description-image-container-reverse"]
+              }
+            >
+              <div className={globalStyles["title-description"]}>
+                <p className={globalStyles["first-line-taller"]}>
+                  Getting to know you
+                </p>
+
+                <div className={globalStyles["description-one"]}>
+                  We read, research, and explore to fully understand your brand
+                  and its objectives, the customer, and the specific and current
+                  market sector landscape. This research stage helps us set you
+                  apart and informs both the core functional nature, and the
+                  visual direction of the concept.
+                </div>
+                <p className={globalStyles["first-line-taller"]}>
+                  Defining brand story at retail
+                </p>
+
+                <div className={globalStyles["description-one"]}>
+                  We read, research, and explore to fully understand your brand
+                  and its objectives, the customer, and the specific and current
+                  market sector landscape. This research stage helps us set you
+                  apart and informs both the core functional nature, and the
+                  visual direction of the concept.
+                </div>
+                <p className={globalStyles["first-line-taller"]}>
+                  Bring a strategy to life
+                </p>
+
+                <div className={globalStyles["description-one"]}>
+                  We are proud to have worked with some of the world’s largest
+                  and best loved brands across myriad sectors around the globe.
+                  And whether creating stores, concessions, branded spaces,
+                  pop-ups, point of sale or windows, our retail design bring
+                  brands to life through immersive physical experiences that
+                  engage your customers and create awareness among new
+                  audiences.
+                </div>
+              </div>
+              <div className={globalStyles["image"]}>
+                <img src={aboutImageSources[6].image} alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <ContactUs />
     </>
   );
 };
