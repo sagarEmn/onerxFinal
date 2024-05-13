@@ -1,4 +1,4 @@
-const imageSources = [
+const aboutImageSources = [
   {
     imageNumber: "1",
     about: "first large image",
@@ -104,4 +104,4 @@ const imageSources = [
   },
 ];
 
-export default imageSources;
+export default aboutImageSources;

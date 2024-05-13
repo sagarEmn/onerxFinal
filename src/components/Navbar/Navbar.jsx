@@ -45,9 +45,9 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-links">
+            <Link to="/services" className="nav-links">
               SERVICES
-            </a>
+            </Link >
           </li>
           <li className="nav-item">
             <a href="#" className="nav-links">

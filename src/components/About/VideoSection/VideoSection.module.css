@@ -1,4 +1,4 @@
-.video {
+/* .video {
     width: 100%;
     object-fit: contain;
     overflow: hidden;
@@ -13,4 +13,4 @@
 
 .video::-webkit-media-controls-panel {
     display: none !important;
-}
+} */

@@ -1,28 +1,22 @@
 import React from "react";
 import styles from "../../../global.module.css";
+import contactImageSources from "../../ContactImageSources";
 
 export default function ContactUs() {
   // Array of image sources
-  const imageSources = [
-    "https://res.cloudinary.com/drplnrrww/image/upload/fl_preserve_transparency/v1715512511/contact-icons/map_iax1ly.jpg?_s=public-apps",
-    "https://res.cloudinary.com/drplnrrww/image/upload/fl_preserve_transparency/v1715512511/contact-icons/phone_c8hj4l.jpg?_s=public-apps",
-    "https://res.cloudinary.com/drplnrrww/image/upload/fl_preserve_transparency/v1715512511/contact-icons/map_iax1ly.jpg?_s=public-apps",
-    "https://res.cloudinary.com/drplnrrww/image/upload/fl_preserve_transparency/v1715512511/contact-icons/phone_c8hj4l.jpg?_s=public-apps",
-    "https://res.cloudinary.com/drplnrrww/image/upload/fl_preserve_transparency/v1715512510/contact-icons/mail_qjesgj.jpg?_s=public-apps",
-    "https://res.cloudinary.com/drplnrrww/image/upload/fl_preserve_transparency/v1715512510/contact-icons/mail_qjesgj.jpg?_s=public-apps",
-  ];
+ 
 
   return (
     <>
       <div className={styles["outer-container"]}>
-        <div className={styles["padding-container"]}>
+        <div className={styles["padding-group-middle-grayBackground"]}>
           <div className={styles["title-description-image-container"]}>
             <div className={styles["title-description-flexGap"]}>
               <p className={styles["first-line"]}>Contact Us</p>
 
               <div className={styles["contact-us-information"]}>
                 <div className={styles["contact-icons"]}>
-                  <img src={imageSources[0]} alt="Map Icon" />
+                  <img src={contactImageSources[0]} alt="Map Icon" />
                 </div>
 
                 <div className={styles["contact-details"]}>
@@ -35,7 +29,7 @@ export default function ContactUs() {
 
               <div className={styles["contact-us-information"]}>
                 <div className={styles["contact-icons"]}>
-                  <img src={imageSources[1]} alt="Phone Icon" />
+                  <img src={contactImageSources[1]} alt="Phone Icon" />
                 </div>
 
                 <div className={styles["contact-details"]}>
@@ -45,7 +39,7 @@ export default function ContactUs() {
 
               <div className={styles["contact-us-information"]}>
                 <div className={styles["contact-icons"]}>
-                  <img src={imageSources[2]} alt="Map Icon" />
+                  <img src={contactImageSources[2]} alt="Map Icon" />
                 </div>
 
                 <div className={styles["contact-details"]}>
@@ -57,7 +51,7 @@ export default function ContactUs() {
 
               <div className={styles["contact-us-information"]}>
                 <div className={styles["contact-icons"]}>
-                  <img src={imageSources[3]} alt="Phone Icon" />
+                  <img src={contactImageSources[3]} alt="Phone Icon" />
                 </div>
 
                 <div className={styles["contact-details"]}>
@@ -67,7 +61,7 @@ export default function ContactUs() {
 
               <div className={styles["contact-us-information"]}>
                 <div className={styles["contact-icons"]}>
-                  <img src={imageSources[4]} alt="Mail Icon" />
+                  <img src={contactImageSources[4]} alt="Mail Icon" />
                 </div>
 
                 <div className={styles["contact-details"]}>
@@ -77,7 +71,7 @@ export default function ContactUs() {
 
               <div className={styles["contact-us-information"]}>
                 <div className={styles["contact-icons"]}>
-                  <img src={imageSources[5]} alt="Mail Icon" />
+                  <img src={contactImageSources[5]} alt="Mail Icon" />
                 </div>
 
                 <div className={styles["contact-details"]}>

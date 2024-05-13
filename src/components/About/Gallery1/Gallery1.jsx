@@ -3,8 +3,9 @@ import globalStyles from "../../../global.module.css";
 import local from "./Gallery1.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import imageSources from "../AboutImage.js";
+import aboutImageSources from "../AboutImage.js";
 import VideoSection from "../VideoSection/VideoSection.jsx";
+import contactImageSources from "../../ContactImageSources.jsx";
 
 const Gallery1 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -24,7 +25,7 @@ const Gallery1 = () => {
             className={`${globalStyles["padding-group-first"]} ${globalStyles["padding-group-extend"]} `}
           >
             <div className={globalStyles["image-container"]}>
-              <img src={imageSources[0].image} alt="" />
+              <img src={aboutImageSources[0].image} alt="" />
             </div>
           </div>
 
@@ -55,7 +56,7 @@ const Gallery1 = () => {
 
           {/* video container */}
           <div className={globalStyles["padding-group-extend"]}>
-            <VideoSection videoLink={imageSources[1].image} />
+            <VideoSection videoLink={aboutImageSources[1].image} />
           </div>
 
           {/* title-description-image-container */}
@@ -88,7 +89,7 @@ const Gallery1 = () => {
                 </div>
               </div>
               <div className={globalStyles["image"]}>
-                <img src={imageSources[2].image} alt="" />
+                <img src={aboutImageSources[2].image} alt="" />
               </div>
             </div>
           </div>
@@ -108,17 +109,17 @@ const Gallery1 = () => {
                 </div>
                 <img
                   className={globalStyles["company-logo-image"]}
-                  src={imageSources[3].image}
+                  src={aboutImageSources[3].image}
                   alt="samsung logo"
                 />
                 <img
                   className={globalStyles["company-logo-image"]}
-                  src={imageSources[4].image}
+                  src={aboutImageSources[4].image}
                   alt="cheil logo"
                 />
               </div>
               <div className={globalStyles["image-more"]}>
-                <img src={imageSources[5].image} alt="" />
+                <img src={aboutImageSources[5].image} alt="" />
               </div>
             </div>
           </div>
@@ -128,7 +129,7 @@ const Gallery1 = () => {
           <div
             className={`${globalStyles["padding-group-extend"]} ${globalStyles["video-80"]}`}
           >
-            <VideoSection videoLink={imageSources[14].image} />
+            <VideoSection videoLink={aboutImageSources[14].image} />
           </div>
 
           {/* title-description-image-container */}
@@ -177,7 +178,7 @@ const Gallery1 = () => {
                 </div>
               </div>
               <div className={globalStyles["image"]}>
-                <img src={imageSources[6].image} alt="" />
+                <img src={aboutImageSources[6].image} alt="" />
               </div>
             </div>
           </div>
@@ -202,7 +203,7 @@ const Gallery1 = () => {
                 </div>
               </div>
               <div className={globalStyles["image"]}>
-                <img src={imageSources[7].image} alt="" />
+                <img src={aboutImageSources[7].image} alt="" />
               </div>
             </div>
           </div>
@@ -225,7 +226,7 @@ const Gallery1 = () => {
                 </div>
               </div>
               <div className={globalStyles["image"]}>
-                <img src={imageSources[8].image} alt="" />
+                <img src={aboutImageSources[8].image} alt="" />
               </div>
             </div>
           </div>
@@ -251,7 +252,7 @@ const Gallery1 = () => {
                 </div>
               </div>
               <div className={globalStyles["image"]}>
-                <img src={imageSources[9].image} alt="" />
+                <img src={aboutImageSources[9].image} alt="" />
               </div>
             </div>
           </div>
@@ -346,21 +347,125 @@ const Gallery1 = () => {
           {/* title-description-image-container */}
           {/* three-image-attached-container */}
           <div className={globalStyles["padding-group-middle"]}>
-            <div className={globalStyles["three-image-attached"]}>
-              <div className={globalStyles["three-image"]}>
-                
+            <div className={globalStyles["three-image-attached-container"]}>
+              <div className={globalStyles["three-image-attached"]}>
+                <img src={aboutImageSources[11].image} alt="" />
+                <img src={aboutImageSources[12].image} alt="" />
+                <img src={aboutImageSources[13].image} alt="" />
+              </div>
+            </div>
+          </div>
+
+          {/* contact us drop section */}
+          <div className={globalStyles["padding-group-middle-grayBackground"]}>
+            <div className={globalStyles["title-description-image-container"]}>
+              <div className={globalStyles["title-description-flexGap"]}>
+                <p className={globalStyles["first-line"]}>Contact Us</p>
+
+                <div className={globalStyles["contact-us-information"]}>
+                  <div className={globalStyles["contact-icons"]}>
+                    <img src={contactImageSources[0]} alt="Map Icon" />
+                  </div>
+
+                  <div className={globalStyles["contact-details"]}>
+                    <p>HQ DUBAI OFFICE:</p>
+                    <p>One RX Interior Decoration LLC Plot No - 598-709 </p>
+                    <p>
+                      Next to Dubai Metal Grating & Manufcturing LLC DIP - 1{" "}
+                    </p>
+                    <p>Dubai / UAE </p>
+                  </div>
+                </div>
+
+                <div className={globalStyles["contact-us-information"]}>
+                  <div className={globalStyles["contact-icons"]}>
+                    <img src={contactImageSources[1]} alt="Phone Icon" />
+                  </div>
+
+                  <div className={globalStyles["contact-details"]}>
+                    <p>+971 4 590 4700</p>
+                  </div>
+                </div>
+
+                <div className={globalStyles["contact-us-information"]}>
+                  <div className={globalStyles["contact-icons"]}>
+                    <img src={contactImageSources[2]} alt="Map Icon" />
+                  </div>
+
+                  <div className={globalStyles["contact-details"]}>
+                    <p>TURKEY OFFICE:</p>
+                    <p>Orta Mah. İbrahim Ağa Cad. No:18 Kısmet Han </p>
+                    <p>Zemin kat Bayrampaşa, İstanbul / TÜRKİYE </p>
+                  </div>
+                </div>
+
+                <div className={globalStyles["contact-us-information"]}>
+                  <div className={globalStyles["contact-icons"]}>
+                    <img src={contactImageSources[3]} alt="Phone Icon" />
+                  </div>
+
+                  <div className={globalStyles["contact-details"]}>
+                    <p>+90 212 437 8072</p>
+                  </div>
+                </div>
+
+                <div className={globalStyles["contact-us-information"]}>
+                  <div className={globalStyles["contact-icons"]}>
+                    <img src={contactImageSources[4]} alt="Mail Icon" />
+                  </div>
+
+                  <div className={globalStyles["contact-details"]}>
+                    <p>info@one-rx.com</p>
+                  </div>
+                </div>
+
+                <div className={globalStyles["contact-us-information"]}>
+                  <div className={globalStyles["contact-icons"]}>
+                    <img src={contactImageSources[5]} alt="Mail Icon" />
+                  </div>
+
+                  <div className={globalStyles["contact-details"]}>
+                    <p>infoturkey@one-rx.com</p>
+                  </div>
+                </div>
               </div>
 
-              {/* image */}
-              <div
-                className={globalStyles["image"]}
-                data-aos="fade-up"
-                data-aos-delay="150"
-              >
-                <img
-                  src="https://res.cloudinary.com/drplnrrww/image/upload/v1715515293/homeGallery/inhouseprodImage_uoavpb.jpg"
-                  alt=""
-                />
+              <div className={globalStyles["title-description-flexGap"]}>
+                <p className={globalStyles["first-line"]}>Drop Us A Line</p>
+
+                <div className={globalStyles["contact-us-information"]}>
+                  <div className={globalStyles["contact-details"]}>
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      className={globalStyles["input-field"]}
+                    />
+                  </div>
+                </div>
+
+                <div className={globalStyles["contact-us-information"]}>
+                  <div className={globalStyles["contact-details"]}>
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      className={globalStyles["input-field"]}
+                    />
+                  </div>
+                </div>
+
+                <div className={globalStyles["contact-us-information"]}>
+                  <div className={globalStyles["contact-details"]}>
+                    <textarea
+                      placeholder="Message"
+                      className={globalStyles["textarea-field"]}
+                    ></textarea>
+                  </div>
+                </div>
+                <p className={globalStyles["description-one"]}>
+                  If you are interested in working with us then please dop us a
+                  line, or contact us below informations, we would love to hear
+                  from you.
+                </p>
               </div>
             </div>
           </div>
