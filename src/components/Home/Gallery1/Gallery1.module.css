@@ -65,6 +65,14 @@
   letter-spacing: 1px;
 }
 
+.description-one-small {
+  column-gap: 0px;
+  color: #4c4d4f;
+  font-family: "Roboto", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
 .second-line {
   color: #3d3d3d;
   font-family: "Montserrat", Sans-serif;

@@ -9,7 +9,6 @@ import TenYearsExp from "./TenYearsExp/TenYearsExp";
 import AutoPlay from "./AutoPlay/AutoPlay";
 import BeforeAfterSlider from "./BeforeAfterSlider/BeforeAfterSlider";
 import ContactUs from "./ContactUs/ContactUs";
-import Footer from "./Footer/Footer";
 import { homeThreeFirst, homeThreeSecond } from "./ThreeImageGrid/imageSources";
 
 export default function Home() {

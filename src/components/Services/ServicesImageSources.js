@@ -87,7 +87,7 @@ const servicesImageSources = [
   },
   {
     imageNumber: "15",
-    description: "home video replace",
+    description: "same home video replace",
     image:
       "https://res.cloudinary.com/drplnrrww/video/upload/v1715518197/homeGallery/compressedTwo_cdtuhx.mp4",
   },
@@ -183,4 +183,108 @@ const servicesImageSources = [
     description: "galaxy s10 ad",
     image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594081/servicesGallery/services29_k60x1l.jpg",
   },
+  {
+    imageNumber: "32",
+    description: "book",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594081/servicesGallery/services30_zoknld.jpg",
+  },
+  {
+    imageNumber: "33",
+    description: "phone tablet",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594081/servicesGallery/services31_lclu53.jpg",
+  },
+  {
+    imageNumber: "34",
+    description: "phone tablet orange background",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594081/servicesGallery/services32_xcw1zt.jpg",
+  },
+  {
+    imageNumber: "35",
+    description: "two people",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594083/servicesGallery/services33_bzjeqj.jpg",
+  },
+  {
+    imageNumber: "36",
+    description: "s10 standing bar",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594082/servicesGallery/services34_wcmldd.jpg",
+  },
+  {
+    imageNumber: "37",
+    description: "samsung z center",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594082/servicesGallery/services35_z3ze2z.jpg",
+  },
+  {
+    imageNumber: "38",
+    description: "samsung blue white board",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594082/servicesGallery/services36_csguoc.jpg",
+  },
+  {
+    imageNumber: "39",
+    description: "white items table",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594084/servicesGallery/services37_f3iagq.png",
+  },
+  {
+    imageNumber: "40",
+    description: "phone slanted blue",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594082/servicesGallery/services38_v5zhkn.jpg",
+  },
+  {
+    imageNumber: "41",
+    description: "white paper",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594083/servicesGallery/services39_svildk.jpg",
+  },
+  {
+    imageNumber: "42",
+    description: "mirror makeup",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594083/servicesGallery/services40_nfedk9.jpg",
+  },
+  {
+    imageNumber: "43",
+    description: "red",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594083/servicesGallery/services41_ro6gmb.jpg",
+  },
+  {
+    imageNumber: "44",
+    description: "people working",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594083/servicesGallery/services42_oolc9e.jpg",
+  },
+  {
+    imageNumber: "45",
+    description: "welding in houe prod upper pic",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594084/servicesGallery/services43_ajhpy1.jpg",
+  },
+  {
+    imageNumber: "46",
+    description: "carboard boxes",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594084/servicesGallery/services44_aw8ys0.jpg",
+  },
+  {
+    imageNumber: "47",
+    description: "same home video replace",
+    image: "https://res.cloudinary.com/drplnrrww/video/upload/v1715518197/homeGallery/compressedTwo_cdtuhx.mp4",
+  },
+  {
+    imageNumber: "48",
+    description: "samsung store",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594085/servicesGallery/services45_ihvghn.jpg",
+  },
+  {
+    imageNumber: "49",
+    description: "red hair",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594085/servicesGallery/services46_aiigoe.jpg",
+  },
+  {
+    imageNumber: "50",
+    description: "small white chair",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594085/servicesGallery/services47_lqluw1.jpg",
+  },
+  {
+    imageNumber: "51",
+    description: "red t shirt people working",
+    image: "https://res.cloudinary.com/drplnrrww/image/upload/v1715594085/servicesGallery/services48_u2ia5s.jpg",
+  },
+
+  
 ];
+
+export default servicesImageSources;
