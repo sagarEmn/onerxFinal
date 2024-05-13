@@ -6,6 +6,9 @@ import "aos/dist/aos.css";
 
 const Gallery2 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const handleClick = (index) => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
 
   useEffect(() => {
     AOS.init({
@@ -15,17 +18,15 @@ const Gallery2 = () => {
     });
   }, []);
 
-  const handleClick = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
-  };
-
   return (
     <>
       <div className={globalStyles["outer-container"]}>
         <div className={globalStyles["padding-container"]}>
           <div className={globalStyles["title-description-image-container"]}>
             <div className={globalStyles["title-description"]}>
-              <p className={`${globalStyles["first-line"]}`}>IN-HOUSE Production</p>
+              <p className={`${globalStyles["first-line"]}`}>
+                IN-HOUSE Production
+              </p>
               <p className={`${globalStyles["description-one"]}`}>
                 Each stage of the process is underpinned by a full range of
                 services we offer in-house, performed by a team of experts
