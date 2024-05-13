@@ -159,9 +159,9 @@ const Gallery1 = () => {
           </div>
 
           {/* title-description-image-container */}
-          {/*  gear icon getting to know you */}
+          {/*  global reach */}
           <div className={globalStyles["padding-group-middle"]}>
-            <div className={globalStyles["title-description-image-container-reverse"]}>
+            <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line-taller"]}>
                   Global Reach
@@ -173,6 +173,45 @@ const Gallery1 = () => {
               </div>
               <div className={globalStyles["image"]}>
                 <img src={imageSources[7].image} alt="" />
+              </div>
+            </div>
+          </div>
+
+          {/* title-description-image-container */}
+          {/*  create projects connect each other */}
+          <div className={globalStyles["padding-group-middle"]}>
+            <div className={globalStyles["title-description-image-container"]}>
+              <div className={globalStyles["title-description"]}>
+                <p className={globalStyles["first-line-taller"]}>
+                  We create projects that make every brand unique 
+                </p>
+
+                <div className={globalStyles["description-one"]}>
+                Teamwork and collaboration generate creativity and innovation. At OneRX, we harbor a synergistic culture, productively working together to ensure that the passion behind our projects resonates within. We take pride in our work, striving to produce the most unique, aesthetically attractive designs.
+                </div>
+              </div>
+              <div className={globalStyles["image"]}>
+                <img src={imageSources[8].image} alt="" />
+              </div>
+            </div>
+          </div>
+
+          {/* title-description-image-container */}
+          {/*  building cost effective global image */}
+          <div className={globalStyles["padding-group-middle"]}>
+            <div className={globalStyles["title-description-image-container"]}>
+              <div className={globalStyles["title-description"]}>
+                <p className={globalStyles["first-line-taller"]}>
+                  Building cost effective, <br />
+                  multi-site solutions
+                </p>
+
+                <div className={globalStyles["description-one"]}>
+                Our team is nationally licensed and completes over 2,000 domestic projects each year. Our portfolio of work encompasses retail categories, store formats, and geographic regions across GCC, Turkey, Africa, Russia and Korea. We combine quality survey work with design-sensitive planning, documentation, and proactive project management to successfully implement multiple sites simultaneously.
+                </div>
+              </div>
+              <div className={globalStyles["image"]}>
+                <img src={imageSources[8].image} alt="" />
               </div>
             </div>
           </div>
