@@ -8,20 +8,26 @@ import Services from "./components/Services/Services";
 import InHouseProd from "./components/InHouseProd/InHouseProd";
 import Gallery from "./components/Gallery/Gallery";
 import ContactPage from "./components/ContactPage/ContactPage";
-  
+import KVKK from "./components/Footer/KVKK";
+import KVKK2 from "./components/Footer/KVKK2";
+import Quality from "./components/Footer/Quality";
+
 function App() {
   return (
     <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/inHouseProd" element={<InHouseProd />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contactPage" element={<ContactPage />} />
-        </Routes>
-        <Footer />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/inHouseProd" element={<InHouseProd />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contactPage" element={<ContactPage />} />
+        <Route path="/KVKK" element={<KVKK />} />
+        <Route path="/KVKK2" element={<KVKK2 />} />
+        <Route path="/QualityCertificates" element={<Quality />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 }

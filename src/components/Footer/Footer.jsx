@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import globalStyles from "../../global.module.css";
 
 class Footer extends Component {
@@ -13,13 +14,13 @@ class Footer extends Component {
               2023 © OneRX All Rights Reserved
             </p>
             <p className={globalStyles["description-one-small"]}>
-              KVKK Hakkında Bilgilendirme
+              <Link to="/KVKK">KVKK Hakkında Bilgilendirme</Link>
             </p>
             <p className={globalStyles["description-one-small"]}>
-              KVKK Aydınlatma Metni
+              <Link to="/KVKK2">KVKK Aydınlatma Metni</Link>
             </p>
             <p className={globalStyles["description-one-small"]}>
-              Quality Certificates
+              <Link to="/QualityCertificates">Quality Certificates</Link>
             </p>
           </div>
         </div>
