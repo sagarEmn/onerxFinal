@@ -314,6 +314,7 @@
 .contact-icons img {
   width: 22px;
   height: 24px;
+  min-width: 22px;
 }
 
 .contact-us-information {
@@ -534,6 +535,9 @@
     font-family: "Roboto", Sans-serif;
     font-size: 0.7rem;
     font-weight: 500;
+  }
+  .contact-details-larger {
+    font-size: .8rem;
   }
   .padding-group-extend {
     padding: 0;
