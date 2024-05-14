@@ -9,6 +9,7 @@ export default function ContactUs() {
     AOS.init({
       offset: 300,
       duration: 950,
+      delay: 200,
       easing: "ease-out",
     });
   }, []);
