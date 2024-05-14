@@ -1,5 +1,6 @@
 import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
@@ -11,10 +12,13 @@ import ContactPage from "./components/ContactPage/ContactPage";
 import KVKK from "./components/Footer/KVKK";
 import KVKK2 from "./components/Footer/KVKK2";
 import Quality from "./components/Footer/Quality";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
-    <Router>
+    <Router scrollToTop={true}>
+      <ScrollToTop />
+
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
