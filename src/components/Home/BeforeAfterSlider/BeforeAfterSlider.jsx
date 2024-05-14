@@ -22,8 +22,10 @@ export default function BeforeAfterSlider() {
   return (
     <div className={globalStyles["outer-container"]}>
       <div className={globalStyles["padding-container"]}>
-        <div className={globalStyles["padding-container"]}>
-          <div className={globalStyles["first-line"]}>Interior Transformation</div>
+        <div className={globalStyles["padding-group-middle-grayBackground"]}>
+          <div className={globalStyles["first-line"]}>
+            Interior Transformation
+          </div>
           <div className={styles["before-after-content"]}>
             <div className={styles["image-container"]}>
               <img
