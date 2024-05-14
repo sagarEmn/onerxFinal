@@ -19,6 +19,15 @@ const Gallery1 = () => {
         <div
           className={`${globalStyles["padding-container"]}`}
         >
+          {/* nav location */}
+          <div className={globalStyles["padding-group-middle-grayBackground"]}>
+            <div className={globalStyles["display-nav-location-center"]}>
+              <div className={globalStyles["first-line"]}>ABOUT US</div>
+              <div className={globalStyles["px14-line"]}>
+                HOME {">"} ABOUT US
+              </div>
+            </div>
+          </div>
           {/* image container */}
           <div
             className={`${globalStyles["padding-group-first"]} ${globalStyles["padding-group-extend"]} `}

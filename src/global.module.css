@@ -69,6 +69,16 @@
   margin: 0;
 }
 
+.px14-line {
+  color: #3b3d42;
+  font-family: "Roboto", Sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4.6px;
+  line-height: 39px;
+  margin: 0;
+}
+
 .description-one {
   column-gap: 0px;
   color: #4c4d4f;
@@ -296,7 +306,9 @@
 }
 
 .contact-icons {
+  display: flex;
   text-align: center;
+  align-items: center;
 }
 
 .contact-icons img {
@@ -308,6 +320,12 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
+}
+
+.contact-details-larger {
+  font-size: 1.2rem;
+  color: #4c4d4f;
+  font-weight: 500;
 }
 
 .contact-details {
@@ -390,6 +408,14 @@
   display: flex;
   gap: 2rem;
 }
+
+.display-nav-location-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 @media (max-width: 1750px) {

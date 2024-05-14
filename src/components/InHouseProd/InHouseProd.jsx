@@ -4,8 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import VideoSection from "../VideoSection/VideoSection";
 import { contactImageSources, videoLink } from "../globalImageSources";
-import inHouseProdImages from "./InHouseProdImagesSources";
-import inHouseProdImageSources from "./InHouseProdImagesSources";
+import inHouseProdImages from "./InHouseProdImageSources";
+import inHouseProdImageSources from "./InHouseProdImageSources";
 import ContactUs from "../Home/ContactUs/ContactUs";
 
 const InHouseProdImages = () => {
@@ -18,6 +18,16 @@ const InHouseProdImages = () => {
     <>
       <div className={globalStyles["outer-container"]}>
         <div className={globalStyles["padding-container"]}>
+
+          {/* nav location */}
+          <div className={globalStyles["padding-group-middle-grayBackground"]}>
+            <div className={globalStyles["display-nav-location-center"]}>
+              <div className={globalStyles["first-line"]}>IN-HOUSE</div>
+              <div className={globalStyles["px14-line"]}>
+                HOME {">"} IN-HOUSE
+              </div>
+            </div>
+          </div>
           {/* image container */}
           {/* poster-title */}
           {/* image index 0 */}

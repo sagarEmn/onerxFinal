@@ -13,6 +13,17 @@ const Services = () => {
     <>
       <div className={globalStyles["outer-container"]}>
         <div className={`${globalStyles["padding-container"]}`}>
+
+          {/* nav location */}
+          <div className={globalStyles["padding-group-middle-grayBackground"]}>
+            <div className={globalStyles["display-nav-location-center"]}>
+              <div className={globalStyles["first-line"]}>SERVICES</div>
+              <div className={globalStyles["px14-line"]}>
+                HOME {">"} SERVICES
+              </div>
+            </div>
+          </div>
+
           {/* video container */}
           {/* home same video */}
           <div

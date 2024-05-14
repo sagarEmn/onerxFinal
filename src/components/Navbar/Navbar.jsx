@@ -19,7 +19,11 @@ export default function Navbar() {
       <div className="navbar-container">
         {/* Top left corner heading */}
         <Link to="/" className="navbar-logo">
-        <img src="https://res.cloudinary.com/drplnrrww/image/upload/v1715515622/homeGallery/logo1_otdeu7.png" alt="logo-retina-1" border="0" />
+          <img
+            src="https://res.cloudinary.com/drplnrrww/image/upload/v1715515622/homeGallery/logo1_otdeu7.png"
+            alt="logo-retina-1"
+            border="0"
+          />
         </Link>
         {/* Nav Icon */}
         <div
@@ -40,19 +44,19 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-          <Link to="/about" className="nav-links">
+            <Link to="/about" className="nav-links">
               ABOUT
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/services" className="nav-links">
               SERVICES
-            </Link >
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-links">
+            <Link to="/gallery" className="nav-links">
               GALLERY
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <Link to="/inHouseProd" className="nav-links">
@@ -60,9 +64,9 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-links">
+            <Link to="/contactPage" className="nav-links">
               CONTACT US
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
