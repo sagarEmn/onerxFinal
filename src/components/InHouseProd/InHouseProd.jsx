@@ -20,7 +20,7 @@ const InHouseProdImages = () => {
         <div className={globalStyles["padding-container"]}>
 
           {/* nav location */}
-          <div className={globalStyles["padding-group-middle-grayBackground"]}>
+          <div className={globalStyles["small-grayBackground"]}>
             <div className={globalStyles["display-nav-location-center"]}>
               <div className={globalStyles["first-line"]}>IN-HOUSE</div>
               <div className={globalStyles["px14-line"]}>

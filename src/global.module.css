@@ -39,6 +39,12 @@
   margin-bottom: 4rem;
   width: 100%;
 }
+.small-grayBackground {
+  padding: 3rem;
+  margin-bottom: 2rem;
+  background-color: #f6f7f9;
+  width: 100%;
+}
 
 .padding-group-extend {
   padding-bottom: 3rem;
@@ -260,6 +266,36 @@
 .three-images-gallery img {
   max-width: 100%;
   height: auto;
+}
+
+.gallerySectionContainer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.galleryRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.2rem;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+
+.gallerySectionImage {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .galleryRow {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .gallerySectionImage {
+    max-width: 85vw;
+  }
 }
 
 .three-menu-container {
@@ -506,6 +542,10 @@
     padding: 3rem;
     margin-bottom: 2rem;
   }
+  .small-grayBackground {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
   .padding-group-extend {
     padding: 1.5rem;
   }
@@ -536,6 +576,10 @@
   .padding-group-middle-grayBackground {
     padding: 2rem;
     margin-bottom: 1.5rem;
+  }
+  .small-grayBackground {
+    padding: 1rem;
+    margin-bottom: .7rem;
   }
   .title-description-image-container {
     flex-direction: column;
@@ -629,6 +673,10 @@
   .padding-group-middle-grayBackground {
     padding: 0.2rem;
     margin-bottom: 1rem;
+  }
+  .small-grayBackground {
+    padding: .5rem;
+    margin-bottom: .3rem;
   }
 }
 

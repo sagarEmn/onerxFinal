@@ -13,7 +13,7 @@ const ContactPage = () => {
       <div className={globalStyles["outer-container"]}>
         <div className={globalStyles["padding-container"]}>
           {/* nav location */}
-          <div className={globalStyles["padding-group-middle-grayBackground"]}>
+          <div className={globalStyles["small-grayBackground"]}>
             <div className={globalStyles["display-nav-location-center"]}>
               <div className={globalStyles["first-line"]}>CONTACT US</div>
               <div className={globalStyles["px14-line"]}>
