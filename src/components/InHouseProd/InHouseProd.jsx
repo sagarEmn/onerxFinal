@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import globalStyles from "../../global.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,6 +9,13 @@ import inHouseProdImageSources from "./InHouseProdImageSources";
 import ContactUs from "../Home/ContactUs/ContactUs";
 
 const InHouseProdImages = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 950,
+      easing: "ease-out",
+    });
+  }, []);
   const [activeIndex, setActiveIndex] = useState(0);
   const handleClick = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
@@ -18,9 +25,12 @@ const InHouseProdImages = () => {
     <>
       <div className={globalStyles["outer-container"]}>
         <div className={globalStyles["padding-container"]}>
-
           {/* nav location */}
-          <div className={globalStyles["small-grayBackground"]}>
+          <div
+            className={globalStyles["small-grayBackground"]}
+            data-aos="zoom-in"
+            data-aos-offset="0"
+          >
             <div className={globalStyles["display-nav-location-center"]}>
               <div className={globalStyles["first-line"]}>IN-HOUSE</div>
               <div className={globalStyles["px14-line"]}>
@@ -31,7 +41,11 @@ const InHouseProdImages = () => {
           {/* image container */}
           {/* poster-title */}
           {/* image index 0 */}
-          <div className={globalStyles["poster-title"]}>
+          <div
+            className={globalStyles["poster-title"]}
+            data-aos="zoom-in"
+            data-aos-offset="0"
+          >
             <div className={`${globalStyles["poster-image"]}`}>
               <img src={inHouseProdImages[0].image} alt="" />
             </div>
@@ -56,7 +70,10 @@ const InHouseProdImages = () => {
 
           {/* title-description-image-container */}
           {/* in house prod three menu container */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={`${globalStyles["first-line"]}`}>
@@ -144,7 +161,10 @@ const InHouseProdImages = () => {
           {/* three-image-attached container */}
           {/* below in-house prod menu */}
           {/* image index 1,2,3 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={inHouseProdImageSources[1].image} alt="" />
@@ -159,6 +179,7 @@ const InHouseProdImages = () => {
           {/* image index video replace*/}
           <div
             className={`${globalStyles["padding-group-extend"]} ${globalStyles["video-80"]}`}
+            data-aos="zoom-in"
           >
             <VideoSection videoLink={videoLink[0].image} />
           </div>
@@ -166,7 +187,10 @@ const InHouseProdImages = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 5 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>
@@ -201,7 +225,10 @@ const InHouseProdImages = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 5,6 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>
@@ -241,6 +268,7 @@ const InHouseProdImages = () => {
           {/* image index video replace*/}
           <div
             className={`${globalStyles["padding-group-extend"]} ${globalStyles["video-80"]}`}
+            data-aos="zoom-in"
           >
             <VideoSection videoLink={videoLink[0].image} />
           </div>
@@ -248,7 +276,10 @@ const InHouseProdImages = () => {
           {/* three-image-attached container */}
           {/* below second video */}
           {/* image index 7,8,9 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={inHouseProdImageSources[7].image} alt="" />
@@ -261,7 +292,10 @@ const InHouseProdImages = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 10 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>Prototyping</p>
@@ -286,7 +320,10 @@ const InHouseProdImages = () => {
           {/* three-image-attached container */}
           {/* below second video */}
           {/* image index 11,12,13 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={inHouseProdImageSources[11].image} alt="" />
@@ -299,7 +336,10 @@ const InHouseProdImages = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index copy services image */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>Retail Solutions</p>
@@ -341,7 +381,10 @@ const InHouseProdImages = () => {
           {/* three-image-attached container */}
           {/* below second video */}
           {/* image index 14,15,16 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={inHouseProdImageSources[14].image} alt="" />
@@ -354,7 +397,10 @@ const InHouseProdImages = () => {
           {/* three-image-attached container */}
           {/* below second video */}
           {/* image index 17,18,19 */}
-          <div className={globalStyles["padding-group-middle-grayBackground"]}>
+          <div
+            className={globalStyles["padding-group-middle-grayBackground"]}
+            data-aos="fade-left"
+          >
             <div
               className={globalStyles["three-image-attached-container-inhouse"]}
             >
@@ -414,6 +460,7 @@ const InHouseProdImages = () => {
           {/* image index video replace*/}
           <div
             className={`${globalStyles["padding-group-extend"]} ${globalStyles["video-80"]}`}
+            data-aos="zoom-in"
           >
             <VideoSection videoLink={videoLink[0].image} />
           </div>

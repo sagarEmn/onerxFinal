@@ -1,19 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import globalStyles from "../../global.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import VideoSection from "../VideoSection/VideoSection";
 import { contactImageSources, videoLink } from "../globalImageSources";
 import ContactUs from "../Home/ContactUs/ContactUs";
-import { GlassWater } from "lucide-react";
 
 const ContactPage = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 1000,
+      easing: "ease-out",
+    });
+  }, []);
   return (
     <>
       <div className={globalStyles["outer-container"]}>
         <div className={globalStyles["padding-container"]}>
           {/* nav location */}
-          <div className={globalStyles["small-grayBackground"]}>
+          <div
+            className={globalStyles["small-grayBackground"]}
+            data-aos="zoom-in"
+            data-aos-offset="0"
+          >
             <div className={globalStyles["display-nav-location-center"]}>
               <div className={globalStyles["first-line"]}>CONTACT US</div>
               <div className={globalStyles["px14-line"]}>
@@ -23,7 +32,7 @@ const ContactPage = () => {
           </div>
 
           {/* first office dubai hq */}
-          <section className="first-office">
+          <section className="first-office" data-aos="fade-right" data-aos-delay="200">
             <div className={globalStyles["contact-us-information"]}>
               <div className={globalStyles["contact-icons"]}>
                 <img src={contactImageSources[0]} alt="Map Icon" />
@@ -56,7 +65,7 @@ const ContactPage = () => {
           </section>
 
           {/* second office turkey office */}
-          <section className="second-office">
+          <section className="second-office" data-aos="fade-left" data-aos-delay="200">
             <div className={globalStyles["contact-us-information"]}>
               <div className={globalStyles["contact-icons"]}>
                 <img src={contactImageSources[0]} alt="Map Icon" />

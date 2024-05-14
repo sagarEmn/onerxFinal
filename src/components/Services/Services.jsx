@@ -1,21 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import globalStyles from "../../global.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ContactUs from "../Home/ContactUs/ContactUs";
 import VideoSection from "../VideoSection/VideoSection";
-import { contactImageSources, videoLink } from "../globalImageSources";
+import { videoLink } from "../globalImageSources";
 import servicesImageSources from "./ServicesImageSources";
 import aboutImageSources from "../About/AboutImage";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 950,
+      easing: "ease-out",
+    });
+  }, []);
   return (
     <>
       <div className={globalStyles["outer-container"]}>
         <div className={`${globalStyles["padding-container"]}`}>
-
           {/* nav location */}
-          <div className={globalStyles["small-grayBackground"]}>
+          <div
+            className={globalStyles["small-grayBackground"]}
+            data-aos="zoom-in"
+            data-aos-offset="0"
+          >
             <div className={globalStyles["display-nav-location-center"]}>
               <div className={globalStyles["first-line"]}>SERVICES</div>
               <div className={globalStyles["px14-line"]}>
@@ -28,13 +38,17 @@ const Services = () => {
           {/* home same video */}
           <div
             className={`${globalStyles["padding-group-extend"]} ${globalStyles["video-80"]}`}
+            data-aos="zoom-in"
           >
             <VideoSection videoLink={videoLink[0].image} />
           </div>
 
           {/* top-title title-description-image-container */}
           {/* we value quality, creativity sketch */}
-          <div className={globalStyles["padding-group-middle-grayBackground"]}>
+          <div
+            className={globalStyles["padding-group-middle-grayBackground"]}
+            data-aos="fade-right"
+          >
             <p className={globalStyles["first-line"]}>
               We Value Quality, Creativity, and Beauty Interior Design
             </p>
@@ -74,7 +88,10 @@ const Services = () => {
 
           {/* title-description-image-container */}
           {/* interior store design */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>
@@ -114,7 +131,10 @@ const Services = () => {
 
           {/* three-image-attached-container */}
           {/* below interior store design */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={servicesImageSources[3].image} alt="" />
@@ -127,7 +147,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 5 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>
@@ -161,7 +184,10 @@ const Services = () => {
           {/* three-image-attached-container */}
           {/* below interior store design */}
           {/* image index 6,7,8 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={servicesImageSources[6].image} alt="" />
@@ -174,7 +200,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 9 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>
@@ -206,7 +235,10 @@ const Services = () => {
           {/* three-image-attached-container */}
           {/* below interior store design */}
           {/* image index 10,11,12 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={servicesImageSources[10].image} alt="" />
@@ -219,7 +251,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 13 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>
@@ -254,6 +289,7 @@ const Services = () => {
           {/* image index 14 */}
           <div
             className={`${globalStyles["padding-group-extend"]} ${globalStyles["video-80"]}`}
+            data-aos="fade-right"
           >
             <VideoSection videoLink={videoLink[0].image} />
           </div>
@@ -261,7 +297,10 @@ const Services = () => {
           {/* three-image-attached-container */}
           {/* below interior store design */}
           {/* image index 15,16,17 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={servicesImageSources[15].image} alt="" />
@@ -274,7 +313,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 18 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>
@@ -302,7 +344,10 @@ const Services = () => {
           {/* three-image-attached-container */}
           {/* below interior store design */}
           {/* image index 19,20,21 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={servicesImageSources[19].image} alt="" />
@@ -315,7 +360,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 22 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>Point of Sale</p>
@@ -341,7 +389,10 @@ const Services = () => {
           {/* three-image-attached-container */}
           {/* below interior store design */}
           {/* image index 23,24,25 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={servicesImageSources[23].image} alt="" />
@@ -354,7 +405,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 26 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>
@@ -380,7 +434,10 @@ const Services = () => {
           {/* three-image-attached-container */}
           {/* below interior store design */}
           {/* image index 27,28,29 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={servicesImageSources[27].image} alt="" />
@@ -393,7 +450,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 30 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>
@@ -420,7 +480,10 @@ const Services = () => {
           {/* three-image-attached-container */}
           {/* below interior store design */}
           {/* image index 31,32,33 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={servicesImageSources[31].image} alt="" />
@@ -433,7 +496,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 34 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>
@@ -460,7 +526,10 @@ const Services = () => {
           {/* three-image-attached-container */}
           {/* below interior store design */}
           {/* image index 35,36,37 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={servicesImageSources[35].image} alt="" />
@@ -473,7 +542,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 38 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>Prototyping</p>
@@ -498,7 +570,10 @@ const Services = () => {
           {/* three-image-attached-container */}
           {/* below interior store design */}
           {/* image index 39,40,41 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={servicesImageSources[39].image} alt="" />
@@ -511,7 +586,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 42 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>
@@ -541,7 +619,10 @@ const Services = () => {
           {/* two-image-attached-container */}
           {/* below interior store design */}
           {/* image index 43,44 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["two-image-attached"]}>
                 <img src={servicesImageSources[43].image} alt="" />
@@ -553,7 +634,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 45 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>Retail Solutions</p>
@@ -594,12 +678,16 @@ const Services = () => {
           {/* image index 46 */}
           <div
             className={`${globalStyles["padding-group-extend"]} ${globalStyles["video-80"]}`}
+            data-aos="zoom-in"
           >
             <VideoSection videoLink={videoLink[0].image} />
           </div>
 
           {/* grayBackground first-line container */}
-          <div className={globalStyles["padding-group-middle-grayBackground"]}>
+          <div
+            className={globalStyles["padding-group-middle-grayBackground"]}
+            data-aos="fade-left"
+          >
             <p className={globalStyles["first-line"]}>
               With our portfolio of work and integrated skill sets, we offer all
               the services you need to bring your vision to life.
@@ -609,7 +697,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 47 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div
               className={
                 globalStyles["title-description-image-container-reverse"]
@@ -639,7 +730,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 48 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div
               className={
                 globalStyles["title-description-image-container-reverse"]
@@ -675,7 +769,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 49 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div
               className={
                 globalStyles["title-description-image-container-reverse"]
@@ -709,7 +806,10 @@ const Services = () => {
           {/* title-description-image-container */}
           {/* interior store design */}
           {/* image index 50 */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div
               className={
                 globalStyles["title-description-image-container-reverse"]
@@ -741,7 +841,10 @@ const Services = () => {
 
           {/* title-description-title-description */}
           {/* retail-solutions planning space */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div
               className={`${globalStyles["title-description-image-container"]} ${globalStyles["three-text-columns"]}`}
             >
@@ -790,7 +893,10 @@ const Services = () => {
           </div>
 
           {/* furniture media graphics */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div
               className={`${globalStyles["title-description-image-container"]} ${globalStyles["three-text-columns"]}`}
             >
@@ -833,7 +939,10 @@ const Services = () => {
 
           {/* title-description-image-container */}
           {/*  gear icon getting to know you */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div
               className={
                 globalStyles["title-description-image-container-reverse"]

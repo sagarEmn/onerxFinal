@@ -1,8 +1,19 @@
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import React, { useEffect } from "react";
+
 import globalStyles from "../../global.module.css";
 import galleryImageSources from "./GalleryImageSources";
 
 function Gallery() {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 950,
+      easing: "ease-out",
+    });
+  }, []);
   // Function to chunk the array into smaller arrays
   const chunkArray = (arr, size) => {
     return Array.from({ length: Math.ceil(arr.length / size) }, (_, index) =>
@@ -17,7 +28,12 @@ function Gallery() {
     <>
       <div className={globalStyles["outer-container"]}>
         <div className={globalStyles["padding-container"]}>
-          <div className={globalStyles["small-grayBackground"]}>
+          {/* nav location */}
+          <div
+            className={globalStyles["small-grayBackground"]}
+            data-aos="zoom-in"
+            data-aos-offset="0"
+          >
             <div className={globalStyles["display-nav-location-center"]}>
               <div className={globalStyles["first-line"]}>GALLERY</div>
               <div className={globalStyles["px14-line"]}>
@@ -25,9 +41,14 @@ function Gallery() {
               </div>
             </div>
           </div>
+
           {/* Loop through the chunkedUrls array and render each galleryRow */}
           {chunkedUrls.map((chunk, index) => (
-            <div key={index} className={globalStyles.galleryRow}>
+            <div
+              key={index}
+              className={globalStyles.galleryRow}
+              data-aos="zoom-in"
+            >
               {/* Loop through the images in the current chunk */}
               {chunk.map((imageUrl, idx) => (
                 <img

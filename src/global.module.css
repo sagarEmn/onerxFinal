@@ -46,6 +46,12 @@
   width: 100%;
 }
 
+.fix-before-after {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .padding-group-extend {
   padding-bottom: 3rem;
 }
@@ -83,6 +89,7 @@
   letter-spacing: 4.6px;
   line-height: 39px;
   margin: 0;
+  text-align: center;
 }
 
 .description-one {

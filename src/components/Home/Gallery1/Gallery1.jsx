@@ -16,7 +16,7 @@ class Gallery1 extends Component {
     return (
       <>
         <div className={styles["gallery-container"]}>
-          <div className={styles["gallery-box"]}>
+          <div className={styles["gallery-box"]} data-aos="fade-left">
             <div className={styles["gallery-text"]}>
               <div className={styles["texts-contain"]}>
                 <p className={`${styles["first-line"]}`}>
@@ -45,6 +45,7 @@ class Gallery1 extends Component {
 
           <div
             className={`${styles["gallery-box"]} ${styles["gallery-box-second"]}`}
+            data-aos="fade-right"
           >
             <div className={styles["gallery-text"]}>
               <div className={styles["texts-contain"]}>
@@ -86,11 +87,11 @@ class Gallery1 extends Component {
           </div>
 
           <div className={styles["three-image-gallery-box"]}>
-            <div className={styles["first-line"]}>
+            <div className={styles["first-line"]} data-aos="fade-right">
               We offers Ideas With Impressive Details
             </div>
             <div className={styles["three-images-gallery"]}>
-              <div className={styles["threeFlex"]}>
+              <div className={styles["threeFlex"]} data-aos="fade-right">
                 <img
                   src="https://res.cloudinary.com/drplnrrww/image/upload/v1715515280/homeGallery/homegallery3_r0ut4t.jpg"
                   alt="three-image-one"
@@ -103,34 +104,31 @@ class Gallery1 extends Component {
                   transformation.
                 </p>
               </div>
-              <div className={styles["threeFlex"]}>
-
-              <img
-                src="https://res.cloudinary.com/drplnrrww/image/upload/v1715515281/homeGallery/homegallery4_qgigmp.jpg"
-                alt="three-image-two"
-              />
-              <p className={styles["second-line"]}>Fresh Design</p>
+              <div className={styles["threeFlex"]}  data-aos="fade-up">
+                <img
+                  src="https://res.cloudinary.com/drplnrrww/image/upload/v1715515281/homeGallery/homegallery4_qgigmp.jpg"
+                  alt="three-image-two"
+                />
+                <p className={styles["second-line"]}>Fresh Design</p>
                 <p className={styles["description-one"]}>
                   We develop transformative solutions that move your brand and
                   business forward. With our diverse portfolio of work and
                   integrated skill sets, we offer all the services you need to
                   bring your vision to life.
                 </p>
-                </div> 
-                <div className={styles["threeFlex"]}>
-
-              <img
-                src="https://res.cloudinary.com/drplnrrww/image/upload/v1715515281/homeGallery/homegallery5_tjqg85.jpg"
-                alt="three-image-three"
-              />
-<p className={styles["second-line"]}>Global Solutions</p>
+              </div>
+              <div className={styles["threeFlex"]}  data-aos="fade-left">
+                <img
+                  src="https://res.cloudinary.com/drplnrrww/image/upload/v1715515281/homeGallery/homegallery5_tjqg85.jpg"
+                  alt="three-image-three"
+                />
+                <p className={styles["second-line"]}>Global Solutions</p>
                 <p className={styles["description-one"]}>
                   Our service delivery model that connects the dots between our
                   service offerings and our practice area ladership so that you
                   get a solution tailored to support not just your design needs,
                   also your buisness goals.
                 </p>
-                
               </div>
             </div>
           </div>

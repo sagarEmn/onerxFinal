@@ -21,7 +21,7 @@ const Gallery2 = () => {
     <>
       <div className={globalStyles["outer-container"]}>
         <div className={globalStyles["padding-container"]}>
-          <div className={globalStyles["title-description-image-container"]}>
+          <div className={globalStyles["title-description-image-container"]}  data-aos="fade-left">
             <div className={globalStyles["title-description"]}>
               <p className={`${globalStyles["first-line"]}`}>
                 IN-HOUSE Production

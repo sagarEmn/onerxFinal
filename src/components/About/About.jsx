@@ -1,26 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import globalStyles from "../../global.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import aboutImageSources from "./AboutImage.js";
+import ContactUs from "../Home/ContactUs/ContactUs.jsx";
 import VideoSection from "../VideoSection/VideoSection.jsx";
-import {contactImageSources, videoLink} from "../globalImageSources.jsx";
+import { contactImageSources, videoLink } from "../globalImageSources.jsx";
 
 const Gallery1 = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 950,
+      easing: "ease-out",
+    });
+  }, []);
+
   const [activeIndex, setActiveIndex] = useState(0);
   const handleClick = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
   return (
     <>
-      <div
-        className={`${globalStyles["outer-container"]}`}
-      >
-        <div
-          className={`${globalStyles["padding-container"]}`}
-        >
+      <div className={`${globalStyles["outer-container"]}`}>
+        <div className={`${globalStyles["padding-container"]}`}>
           {/* nav location */}
-          <div className={globalStyles["small-grayBackground"]}>
+          <div
+            className={globalStyles["small-grayBackground"]}
+            data-aos="zoom-in"
+            data-aos-offset="0"
+          >
             <div className={globalStyles["display-nav-location-center"]}>
               <div className={globalStyles["first-line"]}>ABOUT US</div>
               <div className={globalStyles["px14-line"]}>
@@ -28,9 +37,11 @@ const Gallery1 = () => {
               </div>
             </div>
           </div>
+
           {/* image container */}
           <div
             className={`${globalStyles["padding-group-first"]} ${globalStyles["padding-group-extend"]} `}
+            data-aos="zoom-in"
           >
             <div className={globalStyles["image-container"]}>
               <img src={aboutImageSources[0].image} alt="" />
@@ -38,7 +49,10 @@ const Gallery1 = () => {
           </div>
 
           {/* title texts content */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["first-line"]}>
               We are global interior and branding experts specialising in
               customer-centric experience design.
@@ -63,13 +77,19 @@ const Gallery1 = () => {
           </div>
 
           {/* video container */}
-          <div className={globalStyles["padding-group-extend"]}>
+          <div
+            className={globalStyles["padding-group-extend"]}
+            data-aos="zoom-in"
+          >
             <VideoSection videoLink={videoLink[1].image} />
           </div>
 
           {/* title-description-image-container */}
           {/* providing customized solutions */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>
@@ -104,7 +124,10 @@ const Gallery1 = () => {
 
           {/* title-description-image-container */}
           {/* collaboration samsung chiel logo */}
-          <div className={globalStyles["padding-group-middle-grayBackground"]}>
+          <div
+            className={globalStyles["padding-group-middle-grayBackground"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line"]}>Collaboration</p>
@@ -136,13 +159,17 @@ const Gallery1 = () => {
           {/* home same video */}
           <div
             className={`${globalStyles["padding-group-extend"]} ${globalStyles["video-80"]}`}
+            data-aos="zoom-in"
           >
             <VideoSection videoLink={videoLink[0].image} />
           </div>
 
           {/* title-description-image-container */}
           {/*  gear icon getting to know you */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div
               className={
                 globalStyles["title-description-image-container-reverse"]
@@ -193,7 +220,10 @@ const Gallery1 = () => {
 
           {/* title-description-image-container */}
           {/*  global reach */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line-taller"]}>
@@ -218,7 +248,10 @@ const Gallery1 = () => {
 
           {/* title-description-image-container */}
           {/*  create projects connect each other */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line-taller"]}>
@@ -241,7 +274,10 @@ const Gallery1 = () => {
 
           {/* title-description-image-container */}
           {/*  building cost effective global image */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={globalStyles["first-line-taller"]}>
@@ -267,7 +303,10 @@ const Gallery1 = () => {
 
           {/* title-description-image-container */}
           {/* in house prod three menu container */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-right"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description"]}>
                 <p className={`${globalStyles["first-line"]}`}>
@@ -354,7 +393,10 @@ const Gallery1 = () => {
 
           {/* title-description-image-container */}
           {/* three-image-attached-container */}
-          <div className={globalStyles["padding-group-middle"]}>
+          <div
+            className={globalStyles["padding-group-middle"]}
+            data-aos="fade-left"
+          >
             <div className={globalStyles["three-image-attached-container"]}>
               <div className={globalStyles["three-image-attached"]}>
                 <img src={aboutImageSources[11].image} alt="" />
@@ -364,8 +406,11 @@ const Gallery1 = () => {
             </div>
           </div>
 
-          {/* contact us drop section */}
-          <div className={globalStyles["padding-group-middle-grayBackground"]}>
+          {/* contact us drop section
+          <div
+            className={globalStyles["padding-group-middle-grayBackground"]}
+            data-aos="fade-up"
+          >
             <div className={globalStyles["title-description-image-container"]}>
               <div className={globalStyles["title-description-flexGap"]}>
                 <p className={globalStyles["first-line"]}>Contact Us</p>
@@ -476,9 +521,10 @@ const Gallery1 = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
+      <ContactUs />
     </>
   );
 };

@@ -97,7 +97,8 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-  .navbar-title {
+  .nav-links {
+    font-size: 2rem;
     margin: 0;
     margin-right: 3rem;
   }
@@ -179,6 +180,10 @@
     line-height: 1;
     font-size: 2rem;
   }
+  .nav-item {
+    margin: 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 800px) {
@@ -198,9 +203,18 @@
   .navbar {
     padding: 1.5rem;
   }
+  .nav-links {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+  }
+  .nav-item {
+    margin: 0;
+    text-align: center;
+  }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 370px) {
   .navbar-title,
   .navbar-logo {
     font-size: 1.6rem;
@@ -220,5 +234,17 @@
     &:nth-of-type(1) {
       top: 22%;
     }
+  }
+  .nav-links {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .nav-links {
+    font-size: 1.2rem;
+  }
+  .nav-item {
+    margin: 0;
   }
 }

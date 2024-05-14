@@ -6,7 +6,7 @@ class Footer extends Component {
   render() {
     return (
       <>
-        <div className={globalStyles["outer-container"]}>
+        <div className={globalStyles["outer-container"]} data-aos="zoom-in">
           <div
             className={`${globalStyles["padding-container"]} ${globalStyles["footer-flow"]}`}
           >

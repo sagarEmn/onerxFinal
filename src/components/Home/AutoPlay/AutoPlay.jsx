@@ -1,9 +1,19 @@
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "./AutoPlay.css";
 import { images } from "./AutoPlayImages"; // Import the images array
 
 function AutoPlay() {
+  useEffect(() => {
+    AOS.init({
+      offset: 300,
+      duration: 950,
+      easing: "ease-out",
+    });
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -16,7 +26,7 @@ function AutoPlay() {
   };
 
   return (
-    <div className="small-slider-container">
+    <div className="small-slider-container" data-aos="zoom-in">
       <div className="slider-container">
         <Slider {...settings}>
           {/* Map through the imported images array and generate img elements */}

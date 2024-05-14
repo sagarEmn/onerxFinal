@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../../../global.module.css";
-import {contactImageSources} from "../../globalImageSources";
+import { contactImageSources } from "../../globalImageSources";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function ContactUs() {
-  // Array of image sources
- 
+  useEffect(() => {
+    AOS.init({
+      offset: 300,
+      duration: 950,
+      easing: "ease-out",
+    });
+  }, []);
 
   return (
     <>
       <div className={styles["outer-container"]}>
-        <div className={styles["padding-group-middle-grayBackground"]}>
+        <div
+          className={styles["padding-group-middle-grayBackground"]}
+          data-aos="fade-up"
+        >
           <div className={styles["title-description-image-container"]}>
             <div className={styles["title-description-flexGap"]}>
               <p className={styles["first-line"]}>Contact Us</p>

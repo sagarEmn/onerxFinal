@@ -1,8 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./BeforeAfterSlider.module.css";
 import globalStyles from "../../../global.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function BeforeAfterSlider() {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 950,
+      easing: "ease-out",
+    });
+  }, []);
   const [position, setPosition] = useState(50);
 
   const handleSliderChange = (e) => {
@@ -22,7 +31,10 @@ export default function BeforeAfterSlider() {
   return (
     <div className={globalStyles["outer-container"]}>
       <div className={globalStyles["padding-container"]}>
-        <div className={globalStyles["padding-group-middle-grayBackground"]}>
+        <div
+          className={`${globalStyles["padding-group-middle-grayBackground"]} ${globalStyles["fix-before-after"]}`}
+          data-aos="fade-up"
+        >
           <div className={globalStyles["first-line"]}>
             Interior Transformation
           </div>

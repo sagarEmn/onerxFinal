@@ -17,9 +17,9 @@ const WhatWeOffer = () => {
     <>
       <div className={globalStyles["outer-container"]}>
         <div className={globalStyles["padding-container"]}>
-          <div className={globalStyles["title-description-image-container"]}>
+          <div className={globalStyles["title-description-image-container"]} data-aos="fade-right">
             <div className={globalStyles["title-description"]}>
-              <p className={`${globalStyles["first-line"]}`}>What We Offer</p>
+              <p className={`${globalStyles["first-line"]}`} >What We Offer</p>
               <p className={`${globalStyles["description-one"]}`}>
                 In today’s world of maximum connectivity, we see a convergence
                 of cross-sector trends and take a multifaceted approach to
