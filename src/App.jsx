@@ -19,7 +19,7 @@ function App() {
   return (
     <Router scrollToTop={true}>
       <ScrollToTop />
-      <ProgressBar bgcolor="#DA2337"/>
+      <ProgressBar bgcolor="#DA2337" height="10px" />
 
       <Navbar />
       <Routes>
