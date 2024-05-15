@@ -1,5 +1,6 @@
 import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ProgressBar from "react-scroll-progress-bar"; //Add this line
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -18,6 +19,7 @@ function App() {
   return (
     <Router scrollToTop={true}>
       <ScrollToTop />
+      <ProgressBar bgcolor="#DA2337"/>
 
       <Navbar />
       <Routes>
